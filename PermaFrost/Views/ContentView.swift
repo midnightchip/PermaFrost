@@ -36,11 +36,11 @@ struct ContentView: View {
                         let appPath = try extractor.extract(progress: progress)
                         print("App path: \(appPath)")
                         let appInfo = try parseAppInfo(from: appPath + "/Info.plist")
-						guard appInfo.CFBundleExecutable != nil else {
+                        guard appInfo.CFBundleExecutable != nil else {
                             throw UnzipError("CFBundleExecutable not found")
                         }
-						try DebCreator(filePath: appPath, appInfo: appInfo).createDeb()
-						try extractor.cleanUp()
+                        try DebCreator(filePath: appPath, appInfo: appInfo).createDeb()
+                        try extractor.cleanUp()
                     } catch {
                         print(error)
                     }

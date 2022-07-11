@@ -8,8 +8,8 @@
 import Foundation
 
 class DebCreator {
-    let baseTemp = NSTemporaryDirectory() + "PermaFrost/" + UUID().uuidString + "/" 
-	let tempWorkingPath: String
+    let baseTemp = NSTemporaryDirectory() + "PermaFrost/" + UUID().uuidString + "/"
+    let tempWorkingPath: String
     private let fileManager = FileManager.default
     private let initialFilePath: String
     private let appInfo: AppInfo
@@ -17,14 +17,14 @@ class DebCreator {
     init(filePath: String, appInfo: AppInfo) {
         initialFilePath = filePath
         self.appInfo = appInfo
-		tempWorkingPath = baseTemp + "deb/"
+        tempWorkingPath = baseTemp + "deb/"
     }
-	
-	func createDeb() throws {
-		try createMetaData()
-		try signBundle()
-		try package()
-	}
+
+    func createDeb() throws {
+        try createMetaData()
+        try signBundle()
+        try package()
+    }
 
     private func createMetaData() throws {
         try fileManager.createDirectory(atPath: tempWorkingPath, withIntermediateDirectories: true, attributes: nil)
@@ -85,7 +85,6 @@ class DebCreator {
         try fileManager.setAttributes([FileAttributeKey.posixPermissions: 0o755], ofItemAtPath: tempWorkingPath + "DEBIAN/postinst")
         try fileManager.setAttributes([FileAttributeKey.posixPermissions: 0o755], ofItemAtPath: tempWorkingPath + "DEBIAN/postrm")
         try fileManager.setAttributes([FileAttributeKey.posixPermissions: 0o755], ofItemAtPath: tempWorkingPath + "Applications/" + folderName)
-		
     }
 
     private func signBundle() throws {

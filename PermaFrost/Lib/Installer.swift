@@ -8,13 +8,11 @@
 import Foundation
 
 class Installer {
-	private let debLocation: String
-	
-	init(fileLocation: String) {
-		debLocation = fileLocation
-	}
-	
-	private func install() {
-		
-	}
+    private let debLocation: String
+
+    init(fileLocation: String) {
+        debLocation = fileLocation
+    }
+
+    private func install() {}
 }

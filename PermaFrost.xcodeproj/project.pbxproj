@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F029A200287BC5AE0006D5D6 /* PermaFrostApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029A1FF287BC5AE0006D5D6 /* PermaFrostApp.swift */; };
+		F029A204287BC5B10006D5D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F029A203287BC5B10006D5D6 /* Assets.xcassets */; };
+		F029A207287BC5B10006D5D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F029A206287BC5B10006D5D6 /* Preview Assets.xcassets */; };
+		F029A20F287BCAF00006D5D6 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = F029A20E287BCAF00006D5D6 /* ZIPFoundation */; };
+		F029A212287BCB570006D5D6 /* Extracter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029A211287BCB570006D5D6 /* Extracter.swift */; };
+		F029A216287BCFFF0006D5D6 /* Signer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029A215287BCFFF0006D5D6 /* Signer.swift */; };
+		F029A21A287BD2CD0006D5D6 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029A218287BD2CD0006D5D6 /* DocumentPicker.swift */; };
+		F029A21B287BD2CD0006D5D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029A219287BD2CD0006D5D6 /* ContentView.swift */; };
+		F029A21D287BDEEA0006D5D6 /* AppInfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029A21C287BDEEA0006D5D6 /* AppInfoLoader.swift */; };
+		F029A21F287BE3040006D5D6 /* DebCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029A21E287BE3040006D5D6 /* DebCreator.swift */; };
+		F029A226287C620E0006D5D6 /* entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = F029A221287C620E0006D5D6 /* entitlements.plist */; };
+		F029A227287C620E0006D5D6 /* dev_certificate.p12 in Resources */ = {isa = PBXBuildFile; fileRef = F029A222287C620E0006D5D6 /* dev_certificate.p12 */; };
+		F029A228287C620E0006D5D6 /* postrm in Resources */ = {isa = PBXBuildFile; fileRef = F029A223287C620E0006D5D6 /* postrm */; };
+		F029A229287C620E0006D5D6 /* control in Resources */ = {isa = PBXBuildFile; fileRef = F029A224287C620E0006D5D6 /* control */; };
+		F029A22A287C620E0006D5D6 /* postinst in Resources */ = {isa = PBXBuildFile; fileRef = F029A225287C620E0006D5D6 /* postinst */; };
+		F029A232287CBD480006D5D6 /* Installer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F029A231287CBD480006D5D6 /* Installer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F029A1FC287BC5AE0006D5D6 /* PermaFrost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PermaFrost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F029A1FF287BC5AE0006D5D6 /* PermaFrostApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermaFrostApp.swift; sourceTree = "<group>"; };
+		F029A203287BC5B10006D5D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F029A206287BC5B10006D5D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F029A211287BCB570006D5D6 /* Extracter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extracter.swift; sourceTree = "<group>"; };
+		F029A215287BCFFF0006D5D6 /* Signer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signer.swift; sourceTree = "<group>"; };
+		F029A218287BD2CD0006D5D6 /* DocumentPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		F029A219287BD2CD0006D5D6 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F029A21C287BDEEA0006D5D6 /* AppInfoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoLoader.swift; sourceTree = "<group>"; };
+		F029A21E287BE3040006D5D6 /* DebCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebCreator.swift; sourceTree = "<group>"; };
+		F029A221287C620E0006D5D6 /* entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = entitlements.plist; sourceTree = "<group>"; };
+		F029A222287C620E0006D5D6 /* dev_certificate.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dev_certificate.p12; sourceTree = "<group>"; };
+		F029A223287C620E0006D5D6 /* postrm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postrm; sourceTree = "<group>"; };
+		F029A224287C620E0006D5D6 /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		F029A225287C620E0006D5D6 /* postinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postinst; sourceTree = "<group>"; };
+		F029A22B287C71F10006D5D6 /* NSTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
+		F029A22D287C72120006D5D6 /* PermaFrost-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PermaFrost-Bridging-Header.h"; sourceTree = "<group>"; };
+		F029A231287CBD480006D5D6 /* Installer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Installer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F029A1F9287BC5AE0006D5D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F029A20F287BCAF00006D5D6 /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F029A1F3287BC5AE0006D5D6 = {
+			isa = PBXGroup;
+			children = (
+				F029A1FE287BC5AE0006D5D6 /* PermaFrost */,
+				F029A1FD287BC5AE0006D5D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F029A1FD287BC5AE0006D5D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F029A1FC287BC5AE0006D5D6 /* PermaFrost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F029A1FE287BC5AE0006D5D6 /* PermaFrost */ = {
+			isa = PBXGroup;
+			children = (
+				F029A22C287C71F70006D5D6 /* Headers */,
+				F029A220287C61A50006D5D6 /* Resources */,
+				F029A217287BD2CD0006D5D6 /* Views */,
+				F029A210287BCB290006D5D6 /* Lib */,
+				F029A1FF287BC5AE0006D5D6 /* PermaFrostApp.swift */,
+				F029A203287BC5B10006D5D6 /* Assets.xcassets */,
+				F029A205287BC5B10006D5D6 /* Preview Content */,
+				F029A22D287C72120006D5D6 /* PermaFrost-Bridging-Header.h */,
+			);
+			path = PermaFrost;
+			sourceTree = "<group>";
+		};
+		F029A205287BC5B10006D5D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F029A206287BC5B10006D5D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F029A210287BCB290006D5D6 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				F029A21C287BDEEA0006D5D6 /* AppInfoLoader.swift */,
+				F029A211287BCB570006D5D6 /* Extracter.swift */,
+				F029A215287BCFFF0006D5D6 /* Signer.swift */,
+				F029A21E287BE3040006D5D6 /* DebCreator.swift */,
+				F029A231287CBD480006D5D6 /* Installer.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		F029A217287BD2CD0006D5D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F029A218287BD2CD0006D5D6 /* DocumentPicker.swift */,
+				F029A219287BD2CD0006D5D6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F029A220287C61A50006D5D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F029A224287C620E0006D5D6 /* control */,
+				F029A222287C620E0006D5D6 /* dev_certificate.p12 */,
+				F029A221287C620E0006D5D6 /* entitlements.plist */,
+				F029A225287C620E0006D5D6 /* postinst */,
+				F029A223287C620E0006D5D6 /* postrm */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F029A22C287C71F70006D5D6 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F029A22B287C71F10006D5D6 /* NSTask.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F029A1FB287BC5AE0006D5D6 /* PermaFrost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F029A20A287BC5B10006D5D6 /* Build configuration list for PBXNativeTarget "PermaFrost" */;
+			buildPhases = (
+				F029A1F8287BC5AE0006D5D6 /* Sources */,
+				F029A1F9287BC5AE0006D5D6 /* Frameworks */,
+				F029A1FA287BC5AE0006D5D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PermaFrost;
+			packageProductDependencies = (
+				F029A20E287BCAF00006D5D6 /* ZIPFoundation */,
+			);
+			productName = PermaFrost;
+			productReference = F029A1FC287BC5AE0006D5D6 /* PermaFrost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F029A1F4287BC5AE0006D5D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F029A1FB287BC5AE0006D5D6 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+				};
+			};
+			buildConfigurationList = F029A1F7287BC5AE0006D5D6 /* Build configuration list for PBXProject "PermaFrost" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F029A1F3287BC5AE0006D5D6;
+			packageReferences = (
+				F029A20D287BCAF00006D5D6 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
+			productRefGroup = F029A1FD287BC5AE0006D5D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F029A1FB287BC5AE0006D5D6 /* PermaFrost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F029A1FA287BC5AE0006D5D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F029A229287C620E0006D5D6 /* control in Resources */,
+				F029A207287BC5B10006D5D6 /* Preview Assets.xcassets in Resources */,
+				F029A22A287C620E0006D5D6 /* postinst in Resources */,
+				F029A228287C620E0006D5D6 /* postrm in Resources */,
+				F029A227287C620E0006D5D6 /* dev_certificate.p12 in Resources */,
+				F029A204287BC5B10006D5D6 /* Assets.xcassets in Resources */,
+				F029A226287C620E0006D5D6 /* entitlements.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F029A1F8287BC5AE0006D5D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F029A232287CBD480006D5D6 /* Installer.swift in Sources */,
+				F029A216287BCFFF0006D5D6 /* Signer.swift in Sources */,
+				F029A21D287BDEEA0006D5D6 /* AppInfoLoader.swift in Sources */,
+				F029A212287BCB570006D5D6 /* Extracter.swift in Sources */,
+				F029A21B287BD2CD0006D5D6 /* ContentView.swift in Sources */,
+				F029A21A287BD2CD0006D5D6 /* DocumentPicker.swift in Sources */,
+				F029A21F287BE3040006D5D6 /* DebCreator.swift in Sources */,
+				F029A200287BC5AE0006D5D6 /* PermaFrostApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F029A208287BC5B10006D5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F029A209287BC5B10006D5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F029A20B287BC5B10006D5D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PermaFrost/Preview Content\"";
+				DEVELOPMENT_TEAM = SMJ74RF599;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.midnightchips.PermaFrost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PermaFrost/PermaFrost-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F029A20C287BC5B10006D5D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PermaFrost/Preview Content\"";
+				DEVELOPMENT_TEAM = SMJ74RF599;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.midnightchips.PermaFrost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PermaFrost/PermaFrost-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F029A1F7287BC5AE0006D5D6 /* Build configuration list for PBXProject "PermaFrost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F029A208287BC5B10006D5D6 /* Debug */,
+				F029A209287BC5B10006D5D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F029A20A287BC5B10006D5D6 /* Build configuration list for PBXNativeTarget "PermaFrost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F029A20B287BC5B10006D5D6 /* Debug */,
+				F029A20C287BC5B10006D5D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F029A20D287BCAF00006D5D6 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F029A20E287BCAF00006D5D6 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F029A20D287BCAF00006D5D6 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F029A1F4287BC5AE0006D5D6 /* Project object */;
+}
